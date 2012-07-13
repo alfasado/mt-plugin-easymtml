@@ -1,7 +1,7 @@
 id  : EasyMTML
 key : easymtml
 name: EasyMTML
-version: 0.1
+version: 0.2
 author_name: Alfasado Inc.
 author_link: http://alfasado.net/
 description: 'Easy to develop MTML.'
@@ -9,7 +9,7 @@ description: 'Easy to develop MTML.'
 callbacks:
     init_app:
         handler: EasyMTML::_init_tags
-        priority: 10
+        priority: 1
 tags:
     block:
         easy_mtml_block: sub{}

@@ -24,6 +24,9 @@ sub _init_tags {
         my $tag_name = $item[ 1 ];
         $tag_name =~ s/^mt//i;
         if ( $kind eq 'block' ) {
+            if ( $tag_name =~ m/^if/ ) {
+                $tag_name .= '?';
+            } 
             $block_tags->{ $tag_name } = MT->handler_to_coderef( $data );
         } elsif ( $kind eq 'function' ) {
             $function_tags->{ $tag_name } = MT->handler_to_coderef( $data );
