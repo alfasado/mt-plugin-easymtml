@@ -5,7 +5,6 @@ use File::Spec;
 use MT::FileMgr;
 
 sub _init_tags {
-    my $app = MT->instance();
     my $plugin = MT->component( 'EasyMTML' );
     my $tags_dir = File::Spec->catdir( $plugin->path, 'perl' );
     opendir( DIR, $tags_dir );
