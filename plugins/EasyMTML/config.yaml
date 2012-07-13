@@ -1,0 +1,20 @@
+id  : EasyMTML
+key : easymtml
+name: EasyMTML
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+description: 'Easy to develop MTML.'
+# l10n_class: EasyMTML::L10N
+callbacks:
+    init_app:
+        handler: EasyMTML::_init_tags
+        priority: 10
+tags:
+    block:
+        easy_mtml_block: sub{}
+    function:
+        easy_mtml_function: sub{}
+    modifier:
+        easy_mtml_modifier: sub{}
+
